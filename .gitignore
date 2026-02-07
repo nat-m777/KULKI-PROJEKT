@@ -1,4 +1,13 @@
+# Pliki binarne i foldery kompilacji
 GraKulki
+*.dSYM/
+x64/
+Debug/
+Release/
 *.o
+*.obj
+
+# Pliki systemowe i IDE
 .DS_Store
 .vscode/
+*.vcxproj*
