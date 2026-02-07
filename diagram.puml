@@ -1,0 +1,106 @@
+@startuml
+
+' Definicja klas
+class BazaDanych {
+    - string plikZDanymi
+    - ObslugaGry* daneZGry
+    + BazaDanych()
+    + void setDaneZGry(ObslugaGry* gra)
+    + void setPlikZDanymi(string nazwa)
+    + ObslugaGry* getDaneZGry()
+    + string getPlikZDanymi()
+    + void zapiszStanGry(ObslugaGry* gra)
+    + void odczytaj(string nick)
+}
+
+class Kulka {
+    - Kolor kolor
+    + Kulka(Kolor c)
+    + Kolor getKolor()
+    + static char kolorNaZnak(Kolor k)
+    + static Kolor znakNaKolor(char c)
+}
+
+enum Kolor {
+    Czerwony
+    Zielony
+    Niebieski
+    Szary
+    Fioletowy
+    Pomaranczowy
+    Rozowy
+}
+
+class ObslugaGry {
+    - Plansza tablica
+    - Ruch* aktualnyRuch
+    - string nick
+    - int wynik
+    - BazaDanych* bazaPtr
+    + ObslugaGry()
+    + void setNick(string nazwa)
+    + void setWynik(int x)
+    + void setPlansza(string tekstowaPlansza)
+    + void ustawBaze(BazaDanych* baza)
+    + string getNick()
+    + int getWynik()
+    + string getPlansza()
+    + void start(string nick)
+    + void zapiszAktualnyStan()
+    + void odczytajGre()
+    + void graWTrakcie()
+    + void koniec()
+    + void wyswietlPunktacje()
+    + void dodajWynik(int x)
+}
+
+class Plansza {
+    - Kulka* tablica[9][9]
+    - bool istniejeSciezka(int x1, int y1, int x2, int y2)
+    + Plansza()
+    + ~Plansza()
+    + Kulka* getKulka(int x, int y)
+    + void setKulka(int x, int y, Kulka* k)
+    + void generujKulki(int ilosc)
+    + bool przesun(int x1, int y1, int x2, int y2)
+    + int usunKulki()
+    + bool czyPelna()
+    + void wyswietl()
+    + bool czyPuste(int x, int y)
+    + void odczytajZTekstu(string tekst)
+    + string zapiszJakoTekst()
+}
+
+abstract class Ruch {
+    + virtual void WykonajRuch(Plansza& tab, ObslugaGry* gra) = 0
+}
+
+class RuchGracza {
+    - int x1, y1, x2, y2
+    - void odczytPolaStartowegoIKoncowego()
+    + void WykonajRuch(Plansza& tab, ObslugaGry* gra)
+}
+
+class RuchLosowy {
+    - int x1, y1, x2, y2
+    - void losowePoleStartoweIKoncowe(Plansza& tab)
+    + void WykonajRuch(Plansza& tab, ObslugaGry* gra)
+}
+
+' Dziedziczenie
+RuchGracza --|> Ruch
+RuchLosowy --|> Ruch
+
+' Relacje miêdzy klasami
+ObslugaGry --> Plansza
+ObslugaGry --> Ruch
+ObslugaGry --> BazaDanych
+Plansza --> Kulka
+BazaDanych --> ObslugaGry
+RuchGracza --> Plansza
+RuchGracza --> ObslugaGry
+RuchLosowy --> Plansza
+RuchLosowy --> ObslugaGry
+Kulka --> Kolor
+
+@enduml

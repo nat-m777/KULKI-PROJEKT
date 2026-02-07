@@ -1,0 +1,4 @@
+GraKulki
+*.o
+.DS_Store
+.vscode/

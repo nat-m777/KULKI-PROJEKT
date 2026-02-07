@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BazaDanych" Collapsed="true">
+    <Position X="5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAAAAAABEAAAIQAAAAIAACAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>C:\Users\kl5na\source\repos\Project1\Project1\BazaDanych.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kulka" Collapsed="true">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAABAAAQAAAAAgACAAAAAAAA=</HashCode>
+      <FileName>C:\Users\kl5na\source\repos\Project1\Project1\Kulka.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObslugaGry" Collapsed="true">
+    <Position X="1.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAQBAAKAAAAgAAAAAAAAQAEBEA4QBAJEAAgAAAA=</HashCode>
+      <FileName>C:\Users\kl5na\source\repos\Project1\Project1\ObslugaGry.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plansza" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAACBAAEAAAAgAAAAAAEIADAQAAgAAAQAAACgAAAA=</HashCode>
+      <FileName>C:\Users\kl5na\source\repos\Project1\Project1\Plansza.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ruch" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\kl5na\source\repos\Project1\Project1\Ruch.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RuchGracza" Collapsed="true">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAABAAAwAAAACAAQAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\kl5na\source\repos\Project1\Project1\RuchGracza.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RuchLosowy" Collapsed="true">
+    <Position X="4.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAABAAAwAAAACAAQAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\kl5na\source\repos\Project1\Project1\RuchLosowy.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Kolor" Collapsed="true">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAQAAEAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAEAAAA=</HashCode>
+      <FileName>C:\Users\kl5na\source\repos\Project1\Project1\Kulka.hpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
